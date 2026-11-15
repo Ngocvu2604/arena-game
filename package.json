@@ -1,0 +1,24 @@
+{
+  "name": "pixel-fantasy-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "check": "tsc --noEmit",
+    "test:browser": "node tools/browser-check.mjs",
+    "test:static": "node tools/static-check.mjs",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test tests/*.test.ts",
+    "build": "npm run check && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "playwright-core": "1.56.1",
+    "typescript": "5.8.3",
+    "vite": "6.4.3"
+  }
+}
+

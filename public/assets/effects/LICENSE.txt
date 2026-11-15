@@ -1,0 +1,8 @@
+Weapon Slash - Effect (Classic)
+Author: Cethiel
+License: CC0 1.0 Universal
+Source: https://opengameart.org/content/weapon-slash-effect
+License deed: https://creativecommons.org/publicdomain/zero/1.0/
+Downloaded 2026-11-16. Original archive retained in vendor/cethiel-slash.zip.
+Thirty original frames packed into an atlas by tools/prepare-effects.ps1.
+

@@ -1,0 +1,8 @@
+RPG Sound Pack
+Author: artisticdude
+License: CC0 1.0 Universal
+Source: https://opengameart.org/content/rpg-sound-pack
+License deed: https://creativecommons.org/publicdomain/zero/1.0/
+Downloaded 2026-11-16. Original archive retained in vendor/rpg-sound-pack.zip.
+Selected original WAV recordings, unmodified.
+

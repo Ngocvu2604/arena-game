@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.local
+playwright-report/
+vendor/luizmelo/extracted/
+vendor/luizmelo/previews/
+test-results/

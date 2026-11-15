@@ -1,0 +1,56 @@
+import {options} from '../game/settings'
+const vietnamese:Record<string,string> = {
+  'Up':'Hướng lên','Dash':'Lướt','Skill':'Kỹ năng',
+  'Crimson Blade':'Huyết kiếm','Scarlet Cross':'Thập tự đỏ','Phantom Rush':'Ảo ảnh liên kích',
+  'Shadow Barrage':'Bóng ảnh vây công','Arcane Burst':'Bộc phá huyền thuật',
+  'Mystic Rain':'Mưa huyền thuật','Iron Crusher':'Thiết chùy','Earth Breaker':'Địa chấn',
+  'Crouch':'Cúi người','Display Mode':'Chế độ hiển thị','Windowed':'Cửa sổ',
+  'Graphics Quality':'Chất lượng hình ảnh','Resolution Scaling':'Độ phân giải',
+  'FPS Limit':'Giới hạn FPS','Show FPS':'Hiện FPS','Auto':'Tự động',
+  'Low':'Thấp','Medium':'Vừa','High':'Cao','Particle Quality':'Hạt hiệu ứng',
+  'Background Animation':'Chuyển động nền','Special Effects Quality':'Hiệu ứng chiêu thức',
+  'Auto Detect':'Tự động nhận diện','Recommended':'Đề xuất','Versus Presentation':'Giới thiệu trận',
+  'Player 2 Without Numpad':'P2 dùng hàng phím số','Saved in draft':'Đã chọn, nhấn Áp dụng',
+  'Fullscreen unavailable':'Không thể mở toàn màn hình','Session only':'Đã áp dụng cho phiên này',
+  'Press Enter':'Nhấn Enter','Asset loading failed':'Không thể nạp tài nguyên',
+  'Defeat':'Thất bại','Crimson Slash':'Trảm huyết','Blade Dash':'Kiếm lướt',
+  'Scarlet Tempest':'Bão kiếm đỏ','Phantom Strike':'Ảo ảnh kích','Shadow Step':'Bước bóng đêm',
+  'Thousand Shadows':'Ngàn bóng ảnh','Arcane Bolt':'Đạn huyền thuật','Mystic Barrier':'Kết giới',
+  'Celestial Ruin':'Thiên thể giáng lâm','Ground Breaker':'Phá địa','Iron Guard':'Thiết vệ',
+  "Titan's Judgment":'Phán quyết khổng nhân',
+  'Start Game':'Bắt đầu','Game Modes':'Chế độ chơi','Character Gallery':'Bộ sưu tập','Settings':'Cài đặt','Credits':'Tác giả',
+  'Select Mode':'Chọn chế độ','Player vs CPU':'Đấu với máy','Local Versus':'Hai người chơi','Training':'Luyện tập',
+  'Challenge a computer-controlled fighter.':'Thách đấu với võ sĩ do máy điều khiển.',
+  'Two fighters. One keyboard.':'Hai võ sĩ cùng dùng một bàn phím.',
+  'Practice moves, timing, and combos.':'Luyện đòn, căn thời điểm và liên kích.',
+  'Back':'Quay lại','Select Fighters':'Chọn võ sĩ','Choose Arena':'Chọn đấu trường','Start Battle':'Vào trận',
+  'Player 1':'Người chơi 1','Player 2':'Người chơi 2','CPU':'Máy','Dummy':'Hình nhân','Ready':'Sẵn sàng','Confirm':'Xác nhận','Change':'Đổi',
+  'Health':'Máu','Attack':'Tấn công','Defense':'Phòng thủ','Speed':'Tốc độ','Special':'Chiêu thức','Difficulty':'Độ khó',
+  'Easy':'Dễ','Normal':'Vừa','Hard':'Khó','Moves':'Chiêu thức','Audio':'Âm thanh','Graphics':'Đồ họa','Controls':'Điều khiển','Gameplay':'Trận đấu','Language':'Ngôn ngữ',
+  'Master Volume':'Âm lượng tổng','Music Volume':'Âm lượng nhạc','Sound Effects':'Âm lượng hiệu ứng','Mute':'Tắt tiếng','Fullscreen':'Toàn màn hình',
+  'Pixel Perfect':'Hiển thị sắc nét','Screen Shake':'Rung màn hình','Visual Effects':'Hiệu ứng hình ảnh','Performance Mode':'Chế độ hiệu năng',
+  'Match Duration':'Thời gian hiệp','Rounds':'Số hiệp','CPU Difficulty':'Độ khó của máy','Combo Display':'Hiện liên kích','Input Hints':'Gợi ý phím','Apply':'Áp dụng','Reset':'Đặt lại',
+  'On':'Bật','Off':'Tắt','Saved':'Đã lưu','Press a new key':'Nhấn phím mới','Key already assigned or reserved':'Phím đã dùng hoặc được dành riêng',
+  'Left':'Trái','Right':'Phải','Jump':'Nhảy','Guard':'Phòng thủ','Light':'Đòn nhẹ','Heavy':'Đòn mạnh','Special 1':'Chiêu 1','Special 2':'Chiêu 2','Ultimate':'Tuyệt kỹ',
+  'Pause':'Tạm dừng','Paused':'Đã tạm dừng','Resume':'Tiếp tục','Restart Match':'Đấu lại','Character Select':'Chọn nhân vật','Main Menu':'Màn hình chính',
+  'Leave this match?':'Rời trận đấu?','Match progress will be lost.':'Tiến trình trận đấu sẽ bị mất.','Cancel':'Hủy',
+  'Round':'Hiệp','Fight!':'Chiến!','Time Up':'Hết giờ','Draw':'Hòa','Wins':'Thắng','Winner':'Chiến thắng',
+  'Rounds Won':'Số hiệp thắng','Damage Dealt':'Sát thương','Highest Combo':'Liên kích cao nhất','Match Duration Total':'Tổng thời gian',
+  'Rematch':'Tái đấu','Change Character':'Đổi võ sĩ','Reset Training':'Đặt lại tập luyện',
+  'Hitboxes':'Vùng va chạm','Dummy Guard':'Hình nhân đỡ đòn','Dummy CPU':'Máy điều khiển hình nhân',
+  'Ancient Temple':'Đền cổ','Moonlit Forest':'Rừng trăng','Royal Courtyard':'Sân hoàng gia','Forgotten Battlefield':'Chiến địa lãng quên',
+  'Keyboard / Gamepad':'Bàn phím / tay cầm','Choose':'Chọn','Navigate':'Di chuyển','Strike':'Tấn công',
+  'No fighter selected':'Chưa chọn võ sĩ','Stage':'Đấu trường','New challenger':'Võ sĩ tiếp theo',
+  'Fighter sprites by LuizMelo (CC0)':'Sprite võ sĩ của LuizMelo (CC0)',
+  'Original stages, music and game design':'Đấu trường, âm nhạc và thiết kế trò chơi',
+  'Built with Phaser 3, TypeScript and Vite':'Phát triển bằng Phaser 3, TypeScript và Vite',
+  'Training Controls':'Điều khiển luyện tập','Damage':'Sát thương','Hits':'Đòn','Best':'Kỷ lục',
+  'English':'Tiếng Anh','Vietnamese':'Tiếng Việt','Fight':'Vào trận',
+}
+export function t(label:string, language=options.current.language):string {
+  const translated=(language==='Vietnamese' ? vietnamese[label] : null) ?? label
+  return translated.normalize("NFC")
+}
+
+
+
